@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="initial-scale=1.0,width=device-width" />
+        <meta content="Article title" property="og:title" />
+        <meta content="images/1.png" property="og:image" />
+        <link href="http://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css" />
+        <link href="images/favicon.ico" rel="shortcut icon" />
+        <link href="css/main.css" rel="stylesheet" type="text/css" />
+        <script src="js/jquery.min.js"></script>
+        <script src="js/jquery.placeholder.js"></script>
+        <script src="js/main.js"></script>
+        <title>Article title</title>
+    </head>
+
+    <body>
+        <div id="container">
+            <div id="header">
+                <div id="navigation">
+                    <div class="logo">
+                        <a href="#"><img alt="website logo" src="images/logo.png" /></a>
+                    </div>
+                    <ul>
+                        <li id="menu-home"><a href="#">HOME</a></li>
+                        <li id="menu-news"><a href="#">NEWS</a></li>
+                        <li id="menu-computers"><a href="#">COMPUTERS</a></li>
+                        <li id="menu-tablets"><a href="#">TABLETS</a></li>
+                        <li id="menu-mobiles"><a href="#">MOBILES</a></li>
+                        <li id="menu-websites"><a href="#">WEBSITES</a></li>
+                        <li id="menu-tips"><a href="#">TIPS</a></li>
+                        <li id="menu-listicles"><a href="#">LISTICLES</a></li>
+                    </ul>
+                </div>
+                <div class="clear"></div>
+                <div class="logo mobile">
+                    <a href="#"><img alt="website logo" src="images/logo.png" /></a>
+                </div>
+                <div id="responsive-icon">
+                    <a href="#"><img src="images/menu.png" /></a>
+                </div>
+            </div>
+            <div id="responsive-menu">
+                <ul>
+                    <li id="menu-home-mobile"><a href="#">HOME</a></li>
+                    <li id="menu-news-mobile"><a href="#">NEWS</a></li>
+                    <li id="menu-computers-mobile"><a href="#">COMPUTERS</a></li>
+                    <li id="menu-tablets-mobile"><a href="#">TABLETS</a></li>
+                    <li id="menu-mobiles-mobile"><a href="#">MOBILES</a></li>
+                    <li id="menu-websites-mobile"><a href="#">WEBSITES</a></li>
+                    <li id="menu-tips-mobile"><a href="#">TIPS</a></li>
+                    <li id="menu-listicles-mobile"><a href="#">LISTICLES</a></li>
+                </ul>
+            </div>
+            <div style="margin: auto; width: 94%; height: 3em; padding-left: 1%;">
+                <input
+                    id="search-box"
+                    onfocus=' if($( window ).innerWidth() >= 960){$(this).animate({"width": "40%"}, 700);}'
+                    onblur=' if($( window ).innerWidth() >= 960){$(this).animate({"width": "15%"}, 700);}'
+                    type="text"
+                    maxlength="70"
+                    placeholder="Search..."
+                />
+                <img style="margin-left: -2em; float: left; display: inline;" draggable="false" src="images/search.png" />
+                <div id="header-social-icons">
+                    <a href="#" target="_blank"><img src="images/facebook.png" /></a>
+                    <a href="#" target="_blank"><img src="images/twitter.png" /></a>
+                    <a href="#" target="_blank"><img src="images/instagram.png" /></a>
+                </div>
+            </div>
+            <div id="main-column-wrapper">
+                <div id="main-column">
+                    <img style="width: 100%;" src="images/1.png" />
+                    <h1>Article title</h1>
+                    <p id="user-and-date">Posted on 1/3/2022 - by <a href="#">username</a></p>
+                    <div id="article-text">
+                        <p>Article text here<br /></p>
+                        <p id="article-view-count">10 views</p>
+                    </div>
+
+                    <h1 style="font-size: 1.2em;">More by username</h1>
+
+                    <div class="article-recent">
+                        <img src="images/1.png" />
+                        <div class="text-wrapper">
+                            <h2><a href="article.html?id=1">Article title</a></h2>
+                            <p>By username</p>
+                        </div>
+                    </div>
+                    <div class="article-recent">
+                        <img src="images/1.png" />
+                        <div class="text-wrapper">
+                            <h2><a href="article.html?id=1">Article title</a></h2>
+                            <p>By username</p>
+                        </div>
+                    </div>
+                    <div class="article-recent">
+                        <img src="images/1.png" />
+                        <div class="text-wrapper">
+                            <h2><a href="article.html?id=1">Article title</a></h2>
+                            <p>By username</p>
+                        </div>
+                    </div>
+
+                    <div class="clear"></div>
+
+                    <div id="comments" style="min-height: 5em;">
+                        <img id="comment-icon" alt="" src="images/comment.png" />
+                        <h2 id="comments-title">Comments</h2>
+                        <div style="clear: both;"></div>
+
+                        <div class="comment-container">
+                            <div style="margin: 0.5em 0em;"><span class="comment-username">username</span> - <span class="comment-date">1/3/2022 04:53 PM</span></div>
+                            <p>Nice article</p>
+                        </div>
+                        <form action="" method="post">
+                            <input name="name" class="textbox" style="display: block;" type="tex" maxlength="255" placeholder="Your name" />
+                            <textarea name="comment" class="textfield" maxlength="255" placeholder="Your comment"></textarea>
+                            <input name="commentsubmitted" class="filled-button" type="submit" value="Post" />
+                        </form>
+                    </div>
+                </div>
+
+                <div id="side-column">
+                    <h1>All-time popular</h1>
+
+                    <div class="popular-section">
+                        <img src="images/1.png" />
+                        <div class="popular-section-article">
+                            <h2><a href="article.html?id=1">Article title</a></h2>
+                            <p style="font-size: 0.9em;">By username</p>
+                        </div>
+                    </div>
+                    <div class="popular-section">
+                        <img src="images/1.png" />
+                        <div class="popular-section-article">
+                            <h2><a href="article.html?id=1">Article title</a></h2>
+                            <p style="font-size: 0.9em;">By username</p>
+                        </div>
+                    </div>
+                    <div class="popular-section">
+                        <img src="images/1.png" />
+                        <div class="popular-section-article">
+                            <h2><a href="article.html?id=1">Article title</a></h2>
+                            <p style="font-size: 0.9em;">By username</p>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+
+                    <h1>Popular this week</h1>
+
+                    <div class="popular-section">
+                        <img src="images/1.png" />
+                        <div class="popular-section-article">
+                            <h2><a href="article.html?id=1">Article title</a></h2>
+                            <p style="font-size: 0.9em;">By username</p>
+                        </div>
+                    </div>
+                    <div class="popular-section">
+                        <img src="images/1.png" />
+                        <div class="popular-section-article">
+                            <h2><a href="article.html?id=1">Article title</a></h2>
+                            <p style="font-size: 0.9em;">By username</p>
+                        </div>
+                    </div>
+                    <div class="popular-section">
+                        <img src="images/1.png" />
+                        <div class="popular-section-article">
+                            <h2><a href="article.html?id=1">Article title</a></h2>
+                            <p style="font-size: 0.9em;">By username</p>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="clear"></div>
+            </div>
+
+            <div class="clear"></div>
+            <div id="footer">
+                <div class="wrapper">
+                    <div class="footer-left">
+                        <ul>
+                            <li><a href="">HOME</a></li>
+                            <li><a href="#">NEWS</a></li>
+                            <li><a href="#">COMPUTERS</a></li>
+                            <li><a href="#">TABLETS</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-left">
+                        <ul>
+                            <li><a href="#">MOBILES</a></li>
+                            <li><a href="#">WEBSITES</a></li>
+                            <li><a href="#">TIPS</a></li>
+                            <li><a href="#">LISTICLES</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-right">
+                        <div style="margin-bottom: 1em;">
+                            <a target="_blank" href="#"><img src="images/facebook.png" /></a>
+                            <a target="_blank" href="#"><img src="images/twitter.png" /></a>
+                            <a target="_blank" href="#"><img src="images/instagram.png" /></a>
+                        </div>
+
+                        <ul>
+                            <li><a href="about">About</a></li>
+                            <li><a href="privacy">Privacy</a></li>
+                            <li><a href="advertise">Advertise</a></li>
+                            <li><a href="contact">Contact</a></li>
+                        </ul>
+                        <div class="clear"></div>
+                        <p id="copyright">Copyright notice here</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
